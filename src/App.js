@@ -3,6 +3,7 @@ import {useState,useEffect} from 'react';
 import './App.css';
 import { client } from './client';
 import Posts from './components/Posts'
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
             <Posts posts={articles} />
           </div>
         </main>
+        <Footer content={articles}/>
       </div>
     </div>
   );
