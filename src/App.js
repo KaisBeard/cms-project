@@ -3,6 +3,7 @@ import {useState,useEffect} from 'react';
 import './App.css';
 import { client } from './client';
 import Posts from './components/Posts'
+import Header from './components/Header/Header';
 
 function App() {
 
@@ -14,16 +15,13 @@ function App() {
       setArticles(response.items)
     })
     .catch(console.error)
-  })
+  },[])
 
   return (
     <div className="App">
+      <Header headerEntries={articles}/>
       <div className="container">
-        <header>
-          <div className="wrapper">
-            <span>Hike Blog </span>
-          </div>
-        </header>
+        
         <main>
           <div className="wrapper">
             <Posts posts={articles} />
