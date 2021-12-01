@@ -6,7 +6,7 @@
 }
 
 .white-text {
-  color: white;
+  color: white !important;
 }
 
 .leftside-header {
