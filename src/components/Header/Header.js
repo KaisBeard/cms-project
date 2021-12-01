@@ -1,37 +1,27 @@
 import './Header.css'
+import logo from '../../img/logo.png'
+import picture1 from '../../img/headerpic1.jpg'
+import picture2 from '../../img/headerpic2.jpg'
+import picture3 from '../../img/headerpic3.jpg'
 
-function Header({ headerEntries }) {
-  console.log(headerEntries);
-
-  if (!headerEntries.length > 0) {
-    return <div>loading</div>;
-  }
-
-  const {
-    logoheader,
-    link1,
-    link2,
-    link3,
-    titleHeader,
-    descriptionHeader,
-    singUpHeader,
-    picturesHeader,
-  } = headerEntries[2].fields;
+function Header() {
+ 
 
   return (
 <div className="header-wapper">
     <div className="leftside-header">
         <div className="logo-links-wrap white-text">
-          <img src={logoheader.fields.file.url} alt="logo" />
-          <div >{link1}</div>
-          <div>{link3}</div>
-          <div>{link2}</div>
+          <img src={logo} alt="logo" width="50" height="50"/>
+          <div>Home</div>
+          <div >Bayern</div>
+          <div>Hamburg</div>
+          <div>Hessen</div>
         </div>
 
         <div className="content-header">
-          <div className="white-text title-header">{titleHeader}</div>
-          <div className="description-header">{descriptionHeader}</div>
-          <div className="white-text singup-text ">{singUpHeader}</div>
+          <div className="white-text title-header">Take the first step</div>
+          <div className="description-header">White dwarf Vangelis galaxies tesseract brain is the seed of intelligence great turbulent clouds? Bits of moving fluff with pretty stories for which there's little good evidence something incredible is waiting to be known Tunguska event with pretty stories.</div>
+          <div className="white-text singup-text ">Newsletter Sing Up</div>
           <input className="input-header" type="text" placeholder="Your Email..." />
           <button className="white-text button-header">SUBSCRIBE</button>
         </div>
@@ -39,11 +29,11 @@ function Header({ headerEntries }) {
 
     <div className="rightside-header">
         <div className="toppictures-wrap">
-          <img src={picturesHeader[0].fields.file.url} alt="Boots" />
-        <img src={picturesHeader[1].fields.file.url} alt="Peopel hiking" />  
+          <img src={picture1} alt="Boots" />
+        <img src={picture2} alt="Peopel hiking" />  
         </div>
         <div className="downpicture-wrap">
-         <img src={picturesHeader[2].fields.file.url} alt="Mountains" />   
+         <img src={picture3} alt="Mountains" />   
         </div>
         
     </div>

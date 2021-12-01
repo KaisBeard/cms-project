@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header headerEntries={articles}/>
+      <Header/>
       <div className="container">
         
         <main>
