@@ -2,11 +2,18 @@ import "./footer.css";
 import React from "react";
 import {useState} from "react";
 
-function Footer (content) {
-    //const [a, setA] = useState(content.items[2]?.fields.helloIAmSomeText)
-    //console.log(a)
+function Footer ({content}) {
+    console.log(content)
 
-    return <div>hello I am some footer</div>
+    if (!content.length > 0) {
+        return <div> loading... </div>;
+    };
+    
+    const {footerLeftColumn, footerCenterColumn, footerRightColumn} = content[5].fields;
+
+    //const footer = content[5]?.fields
+    //console.log(footer)
+    return <div>{footerLeftColumn}</div>
 
 }
 

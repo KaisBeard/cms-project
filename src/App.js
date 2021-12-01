@@ -13,6 +13,7 @@ function App() {
     client.getEntries()
     .then((response) => {
       console.log(response)
+      //loading flag
       setArticles(response.items)
     })
     .catch(console.error)
