@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Bayern() {
     return (
         <div>
-        <Link to="/bayern"></Link>
+            <h1>Bayern</h1>
    
     </div>
     )

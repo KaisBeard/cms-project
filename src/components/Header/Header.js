@@ -9,9 +9,8 @@ function Header() {
   return (
     <div className="header-wapper">
       <div className="leftside-header">
-        <div className="logo-links-wrap white-text">
+        <nav className="logo-links-wrap white-text">
           <img src={logo} alt="logo" width="50" height="50" />
-
           <NavLink className="btn btn-outline-primary" to="/">
             Home
           </NavLink>
@@ -25,7 +24,8 @@ function Header() {
           <NavLink className="btn btn-outline-primary" to="/hessen">
             Hessen
           </NavLink>
-        </div>
+          
+        </nav>
 
         <div className="content-header">
           <div className="white-text title-header">Take the first step</div>

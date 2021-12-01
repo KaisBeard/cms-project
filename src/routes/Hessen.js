@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-function Home() {
+function Hessen() {
 
     return (
 
-        <Link to="/"></Link>
+        <h1>Hessen</h1>
     )
    
 };
 
-export default Home;
+export default Hessen;

@@ -3,7 +3,7 @@ function Hamburg() {
 
     return (
 
-        <Link to="/hamburg"></Link>
+        <h1>Hamburg</h1>
     )
    
 };
