@@ -13,7 +13,6 @@ function App() {
     client.getEntries()
     .then((response) => {
       console.log(response)
-      //loading flag
       setArticles(response.items)
     })
     .catch(console.error)
@@ -29,7 +28,7 @@ function App() {
             <Posts posts={articles} />
           </div>
         </main>
-        <Footer content={articles}/>
+        <Footer/>
       </div>
     </div>
   );

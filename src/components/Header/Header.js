@@ -16,7 +16,7 @@ function Header({ headerEntries }) {
     descriptionHeader,
     singUpHeader,
     picturesHeader,
-  } = headerEntries[0].fields;
+  } = headerEntries[2].fields;
 
   return (
 <div className="header-wapper">
