@@ -7,10 +7,10 @@
 }
 
 body {
-  color: #455;
+  color:rgb(73, 66, 66);
   line-height: 1.5;
   font-family: "Muli", sans-serif;
-  background-color: rgb(53, 53, 53);
+  background-color:rgba(100, 132, 24, 0.50);
   /* background-image: url("./bg.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
