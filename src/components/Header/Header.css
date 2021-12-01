@@ -1,0 +1,71 @@
+.header-wapper {
+  background-color: #648418;
+  height: 60vh;
+  display: flex;
+  width: 100%;
+}
+
+.white-text {
+  color: white;
+}
+
+.leftside-header {
+  width: 50%;
+  padding: 3% 5%;
+}
+
+.rightside-header {
+  width: 50%;
+}
+
+.toppictures-wrap {
+  display: flex;
+}
+.toppictures-wrap img {
+  height: 30vh;
+  width: 50%;
+  object-fit: cover;
+}
+
+.downpicture-wrap img {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo-links-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.title-header {
+  font-size: 5vh;
+  padding-top: 2%;
+  font-weight: 700;
+}
+
+.description-header {
+  padding-top: 2%;
+}
+
+.input-header {
+  height: 30px;
+  width: 40%;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+.singup-text {
+  margin-top: 3%;
+  font-weight: 700;
+}
+
+.button-header {
+  background-color: #e67e1b;
+  height: 30px;
+  margin-left: 3%;
+  padding: 1%;
+  font-weight: 600;
+}
