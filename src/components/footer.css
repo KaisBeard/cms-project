@@ -1,0 +1,20 @@
+footer{
+    background-color: #648418;
+    height: 60px;
+    padding: 10px;
+    
+}
+.footerIcons{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.icons{
+    transition: transform 250ms;
+}
+.icons:hover {
+    transform: translateY(-10px);
+}
