@@ -13,7 +13,7 @@ function App() {
     client.getEntries()
     .then((response) => {
       console.log(response)
-      //loading flag
+      //loading flag   
       setArticles(response.items)
     })
     .catch(console.error)
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header headerEntries={articles}/>
+      
       <div className="container">
         
         <main>
@@ -29,10 +29,12 @@ function App() {
             <Posts posts={articles} />
           </div>
         </main>
-        <Footer content={articles}/>
+        <Footer content={articles} />
       </div>
     </div>
   );
 }
 
 export default App;
+
+//<Header headerEntries={articles}/>
