@@ -18,14 +18,14 @@ function App() {
         setArticles(response.items);
       })
       .catch(console.error);
-  }, []);
+  }, []); //We need to move this to index.js at some point!
 
   return (
     <div className="App">
       <Header />
       
       <div className="container">
-        <Outlet/>
+        <Outlet />
       </div>
 
       <main>
@@ -40,4 +40,4 @@ function App() {
 
 export default App;
 
-//<Header headerEntries={articles}/>
+//
