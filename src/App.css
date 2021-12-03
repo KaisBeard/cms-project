@@ -20,15 +20,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  display: flex;
+  padding: 5%;
+  width: 100%;
+
+}
 
 .wrapper {
-    width: 50%;
-    max-width: 900px;
-    padding: 0 10px;
-    margin: auto;
-    
+    width: 100%;
+      
 }
 
-main .wrapper {
-  padding: 50px 15px;
-}

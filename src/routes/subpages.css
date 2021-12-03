@@ -1,5 +1,4 @@
 article {
-    margin: 5%;
     padding: 1em;
     display: grid; 
     grid-template: auto / repeat(3, minmax(0, 1fr)); /*2em, 10em, 5em;*/

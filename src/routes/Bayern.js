@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import {useState, useEffect} from "react";
 import {client} from ".././client";
 import "./subpages.css"
@@ -7,7 +7,7 @@ function Bayern() {
     const [pageContent, setPageContent] = useState();
     const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    client.getEntry('NMZROTlX3lGsn7FZxYs21')
+    client.getEntry('2RjNEbPRej1PUTsqwOoiwL')
       .then((response) => {
         console.log(response);
         setPageContent(response.fields);
@@ -25,6 +25,7 @@ function Bayern() {
   const {name, articleText, difficulty, distance, hikingRoute, summitElevation, whenToGo, timeNeeded, image, postPicture2, postPicture3} = pageContent;
     
     return (
+      <div>
       <span className="aritcleFrame">
         <article>
                 <h1 className="gridElement">{name}</h1>
@@ -52,7 +53,12 @@ function Bayern() {
                 <div className="map gridElement">here goes the map</div>   
     </article>
     </span>
+
+    
+    </div>
     )
+
+    
 }
 
 export default Bayern;
