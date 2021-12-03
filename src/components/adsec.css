@@ -1,0 +1,15 @@
+.adcontainer{
+    margin-left : 20px;
+    display:flex;
+    flex-direction: column;
+    width: 175px;
+    border: 1px solid black;
+
+}
+
+.adone{
+    display: flex;
+    flex-direction: column;
+    margin : 4px;
+    
+}
