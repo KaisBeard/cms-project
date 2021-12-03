@@ -1,6 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { client } from ".././client";
+import generateMap from "../helpers/maplibre";
 import "./subpages.css";
 
 function Hessen() {
@@ -13,6 +13,7 @@ function Hessen() {
         console.log("reponse", response);
         setPageContent(response.fields);
         setIsLoading(false);
+        generateMap("map-hessen", response.fields.hikingRoute);
       })
       .catch(console.error);
   }, []);
@@ -71,8 +72,10 @@ function Hessen() {
           </dl>
         </div>
 
-        <div className="map gridElement">here goes the map</div>
       </article>
+      <div className="map-libremap-wrapper">
+        <div className="map-libremap" id="map-hessen"></div>
+      </div>
     </span>
   );
 }
