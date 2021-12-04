@@ -12,7 +12,7 @@ function Post({ article }) {
             {image && <img className='image' src={image.fields.file.url} alt={name} title={name} /> }
             <div className='title'>
             <button  id= 'collapsebtn' > {name} </button>
-            <button id='linksbtn' onClick={linkRef}> MORE </button>
+            <a href={linkRef}> <button id='linksbtn' onClick={linkRef}> MORE </button> </a>
             </div>
             <div className="description">{description}</div>
             
