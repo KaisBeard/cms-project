@@ -5,7 +5,7 @@ import Post from './Post';
 
 function Posts({ posts }) {
     return (
-        <div>
+        <div className="wrapper-post-home">
             {posts.map((article, index) => <Post article={article} key={index}/>)}
         </div>
         
