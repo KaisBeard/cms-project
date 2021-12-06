@@ -49,7 +49,7 @@ function Header() {
       <div className="rightside-header">
         <div className="toppictures-wrap">
           <img src={picture1} alt="Boots" />
-          <img src={picture2} alt="Peopel hiking" />
+          <img src={picture2} alt="People hiking" />
         </div>
         <div className="downpicture-wrap">
           <img src={picture3} alt="Mountains" />

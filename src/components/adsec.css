@@ -1,14 +1,61 @@
-.adcontainer{
+.adcontainer {
     margin : 0px 20px;
+    padding: 1em;
     min-width: 300px;
     background-color:#DFBD9B;
-
+    max-width: 300px;
 }
 
-.adone{
+.adone {
     display: flex;
     flex-direction: column;
-    margin : 4px;
+    margin: 6em, 4px;
     align-items: center;
+    padding-top: 1.5em;
+}
+
+.adone img {
+    max-width: 100%;
+}
+ /* Zentrierung h2 */
+
+@media only screen and (max-width: 1000px) {
+    .adcontainer {
+        display: flex; 
+        flex-direction: row;
+        max-width: 100%;
+        margin-bottom: 5%;
+        padding: 0px;
+        max-height: 120px;
+    }
+
+    .secondAd, .secondAd *, .adcontainer h2 {
+        visibility: hidden;
+        max-width: 1px;
+    }
+
+    .adone {
+        flex-direction: row;
+        margin: 1em;
+        padding: 0em;
+    }
+
+    .adone * {
+        margin: 0.5em;
+    }
+
+    .adone h3 {
+        visibility: hidden;
+        max-width: 1px;
+    }
+
+    .adone div {
+        overflow: hidden;
+        max-height: 100%;
+    }
+
+    .adone img {
+        max-height: 100%;
+    }
     
 }
